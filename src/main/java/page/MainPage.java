@@ -46,4 +46,10 @@ public class MainPage extends BasePage {
         return new ContactPage(driver);
     }
 
+    public DepartmentPage toDepartment(){
+        click(By.cssSelector("#menu_contacts"));
+        click(By.cssSelector(".member_colLect_top_addBtn"));
+        click(By.linkText("添加部门"));
+        return new DepartmentPage(driver);
+    }
 }

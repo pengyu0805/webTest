@@ -8,9 +8,7 @@ import java.net.URL;
 public class ContactPage extends BasePage{
     By addMenber= By.linkText("添加成员");
     By username=By.name("username");
-    By delate =By.linkText("删除");
-    By departmentName=By.name("departmenrtName");
-    By ownerDepartment=By.xpath("//*[@id=\"1688850821748232_anchor\"]");
+    By delete =By.linkText("删除");
 
 
     public ContactPage(RemoteWebDriver driver){
@@ -53,10 +51,4 @@ public class ContactPage extends BasePage{
         return this;
     }
 
-    public ContactPage addDepartment(String departmentName, String ownerDepartment){
-        sendkeys(this.departmentName,departmentName);
-        sendkeys(this.ownerDepartment,ownerDepartment);
-        click(By.linkText("确定"));
-        return null;
-    }
 }

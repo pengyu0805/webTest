@@ -32,10 +32,10 @@ public class TestContact {
     }
 
     @Test
-    void testAddDepartment(){
-        ContactPage departmentName=contact.addDepartment("部门1","py");
+    //void testAddDepartment(){
+      //  ContactPage departmentName=contact.addDepartment("部门1","py");
 
-    }
+    //}
 
 
     @AfterAll
